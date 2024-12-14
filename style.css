@@ -1,0 +1,269 @@
+* {
+  font-family: "Noto Sans", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+header {
+  height: 72px;
+  border-bottom: 1px solid #1d1d28;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1d1d28;
+  text-decoration: none;
+}
+
+.header-left {
+  display: flex;
+}
+
+.header-left > div:not(:last-child) {
+  border-right: 1px solid #1d1d28;
+}
+
+.header-logo > img {
+  padding: 18px 40px 19px;
+}
+
+.header-element {
+  padding: 25px 40px;
+}
+
+.header-right {
+  display: flex;
+}
+
+.header-right > div:is(:first-child) {
+  border-right: 1px solid #1d1d28;
+}
+
+.header-element__signup {
+  display: flex;
+  padding: 28px 40px;
+  align-items: center;
+}
+
+.plus-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-left: 12px;
+  background-color: #1d1d28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus-circle > a {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Main Section */
+
+main {
+  display: flex;
+  color: #1d1d28;
+  position: relative;
+}
+
+.main-left {
+  padding: 140px 0px 0px 105px;
+  max-width: 657px;
+}
+
+.main-left__title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 70.4px;
+  margin-bottom: 32px;
+}
+
+.liinks {
+  line-height: 1;
+  position: relative;
+  z-index: 9999;
+}
+
+.liinks-background {
+  width: 184px;
+  height: 24px;
+  position: absolute;
+  background-color: #c1f3fe;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: -1;
+}
+
+.main-left__desc {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  max-width: 476px;
+  margin-bottom: 40px;
+  opacity: 70%;
+}
+
+.main-left__input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 448px;
+  height: 64px;
+  border: 1px solid #1d1d28;
+  border-radius: 68px;
+  box-shadow: 3px 3px 0 0 #1d1d28;
+}
+
+.main-left__input-logo {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-left__input-text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.main-left__input-button {
+  width: 154px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
+  line-height: 16px;
+  background-color: #1d1d28;
+  border-radius: 72px;
+  margin-left: 41px;
+}
+
+.main-left__input-click {
+  position: absolute;
+  left: 100%;
+  top: -40%;
+}
+
+.main-right {
+  display: flex;
+
+  width: 100%;
+}
+
+.main-right__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 403px;
+  height: 716px;
+  border-left: 1px solid #1d1d28;
+  background-color: #c4dffd;
+  z-index: -1;
+}
+
+.main-phone {
+  width: 274px;
+  border: 1px solid #1d1d28;
+  margin-top: 62px;
+  margin-bottom: 71px;
+  margin-left: 137px;
+  border-radius: 20px;
+  z-index: 9999;
+  background-color: white;
+  position: relative;
+}
+
+.main-phone__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 24px 0px 21px;
+}
+
+.main-phone__spiderman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-phone__spiderman-avatar {
+  padding-top: 7px;
+}
+
+.main-phone__spiderman-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1d1d28;
+  line-height: 28.8px;
+  padding-top: 16px;
+}
+
+.main-phone__spiderman-desc {
+  padding: 8px 32px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1d1d28;
+  opacity: 70%;
+  line-height: 22.4px;
+  text-align: center;
+}
+
+.main-phone__socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 76px 32px;
+}
+
+.main-phone__socials-element {
+}
+
+.main-phone__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 16px;
+  padding-bottom: 44px;
+}
+
+.main-phone__buttons-element {
+  width: 223px;
+  height: 40px;
+  border: 1px solid #1d1d28;
+  border-radius: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 0 0 #1d1d28;
+}
+
+.main-phone__buttons-element > a {
+  color: #1d1d28;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
